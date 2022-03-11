@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./tonystark.jpg" type="image/x icon">
+    <link rel="manifest" href="/site.webmanifest"/>
+    <script src="https://use.fontawesome.com/c094c68e46.js"></script>
+    <title>MyBlog</title>
+</head>
+<body>
+     <div class="wrapper">
+         <div class="app">
+           <div class="app-info">
+            <div class="app-img">
+                <img src="./tonystark.jpg" alt="">
+            </div>
+            <div class="app-name">
+                <h1>Nguyễn Phúc Minh An</h1>
+              <div class="app-icon">
+                 <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="app-job">
+                <p>My Job: Font-End Web</p>
+            </div>
+           </div>
+           <div class="app-content">
+               <div class="app-fb">
+                   <a href="https://www.facebook.com/ann.minh.71/" target="_blank">
+                   <div class="link-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                   </div>
+                   </a>
+               </div>
+               <div class="app-mess">
+                   <a href="#" target="_blank">
+                       <div class="link-icon">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                       </div>
+                   </a>
+               </div>
+               <div class="app-insta">
+                   <a href="https://www.instagram.com/ann.minh.71/" target="_blank">
+                       <div class="link-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                       </div>
+                   </a>
+               </div>
+               <div class="app-gmail">
+                   <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcRwRrqGWwsghmDnLswDtVfKTLBBxkwbnPZCKGmJGBnQxqXrPVPVGRDZfxFxkVHWGCVVNsSvX" 
+                   target="_blank">
+                       <div class="link-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                       </div>
+                   </a>
+               </div>
+           </div>
+           <div class="toggle toggle_back">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="toggle toggle__theme">
+            <i class="fas fa-moon"></i>
+        </div>
+           <div class="app-contact">
+               <div class="app-title">
+                   <h2>Contact For Work</h2>
+                   <div class="app-email" style="font-size: 12px;">
+                     <p>
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelopes-bulk"></i>
+                        </div>
+                        Email: minhanit89@gmail.com
+                     </p>
+                   </div>
+                   <div class="app-phone" style="font-size: 12px;">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                     Phone: 0815691176
+                   </div>
+                   <div class="app-address" style="font-size: 12px;">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    Address: 195 Le Cao Lang, Tan Phu District
+                   </div>
+               </div>
+           </div>
+         </div>
+     </div>
+     <script>
+         const toggle = document.querySelector(".toggle__theme");
+const card = document.querySelector(".app");
+toggle.addEventListener("click", () => {
+    let theme = toggle.querySelector(".fas");
+    if (theme.classList.contains("fa-moon")) {
+        theme.classList.remove("fa-moon");
+        theme.classList.add("fa-sun");
+        card.classList.add("dark");
+    } else {
+
+        theme.classList.remove("fa-sun");
+        theme.classList.add("fa-moon");
+        card.classList.remove("dark");
+
+    }
+})
+     </script>
+</body>
+</html>
